@@ -1,2 +1,2 @@
-# Blog
-Este es un repositorio para hacer pruebas
+# Blog2
+Este es un repositorio para hacer pruebas 2
