@@ -1,3 +1,4 @@
+import { PostTimerPipe } from './../pipes/post-timer.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { BlogComponent } from './blog.component';
@@ -11,7 +12,8 @@ import { EntradasComponent } from './entradas/entradas.component';
   declarations: [
     BlogComponent,
     PortadaComponent,
-    EntradasComponent
+    EntradasComponent,
+    PostTimerPipe
   ],
   imports: [
     CommonModule,
