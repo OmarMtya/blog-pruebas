@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row bootstrap snippets bootdeys">
+        <div class="col-md-8 col-sm-12">
+            <div class="comment-wrapper">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        Comment panel
+                    </div>
+                    <div class="panel-body">
+                        <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+                        <br>
+                        <button type="button" class="btn btn-dark pull-right">Post</button>
+                        <div class="clearfix"></div>
+                        <hr>
+                        <ul class="media-list">
+                            <li class="media">
+                                <div class="media-body" *ngFor="let comentario of comentarios" class="coment" [ngClass]="{'class': comentario}">
+                                    <a href="#" class="pull-left">
+                                        <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" alt="" class="img-circle">
+                                    </a>
+                                    <strong class="text-success">{{comentario.autor.username}}</strong>
+                                    <p>
+                                        {{comentario.contenido}}
+                                    </p>
+                                    <span class="text-muted pull-right">
+                                        <small class="text-muted">{{comentario.fecha|date:"H:mm:ss a"}}</small>
+                                    </span>
+
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
